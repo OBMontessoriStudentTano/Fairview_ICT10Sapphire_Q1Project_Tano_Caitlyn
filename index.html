@@ -9,6 +9,7 @@
     href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" 
     src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
 <body class="body">
 
     <br>
@@ -31,44 +32,45 @@
  
     <h2>Food</h2>
 
-    <input type="checkbox" id="chicken" data-price="65"> Fried Chicken - 65 pesos<br>
-    <input type="checkbox" id="pancit" data-price="15"> Pancit Pops - 15 pesos
+    <input type="checkbox" id="chicken" data-price="65" data-sku="FOO-FC-001"> Fried Chicken - 65 pesos
     <br>
-    <input type="checkbox" id="burger" data-price="60"> Cheese Burger - 60 pesos
+    <input type="checkbox" id="pancit" data-price="15" data-sku="FOO-P-002"> Pancit - 15 pesos
     <br>
-    <input type="checkbox" id="siomai" data-price="5"> Siomai - 5 pesos
+    <input type="checkbox" id="burger" data-price="60" data-sku="FOO-CB-003"> Cheese Burger - 60 pesos
     <br>
-    <input type="checkbox" id="sandwiches" data-price="20"> Ham, Cheese, and Egg sandwiches - 20 pesos
+    <input type="checkbox" id="siomai" data-price="5" data-sku="FOO-S-004"> Siomai - 5 pesos
+    <br>
+    <input type="checkbox" id="sandwiches" data-price="20" data-sku="FOO-HCE-005"> Ham, Cheese, and Egg sandwiches - 20 pesos
     <br><br><br>
     </div>
 
     <div class="category">
     <h2>Snacks</h2>
 
-    <input type="checkbox" id="nuggets" data-price="65"> Chicken Nuggets - 65 pesos
+    <input type="checkbox" id="nuggets" data-price="65" data-sku="SNK-CN-006"> Chicken Nuggets - 65 pesos
     <br>
-    <input type="checkbox" id="cupcakes" data-price="10"> Cupcakes - 10 pesos
+    <input type="checkbox" id="cupcakes" data-price="10" data-sku="SNK-C-007"> Cupcakes - 10 pesos
     <br>
-    <input type="checkbox" id="popcorn" data-price="20"> Popcorn - 20 pesos
+    <input type="checkbox" id="popcorn" data-price="20" data-sku="SNK-P-008"> Popcorn - 20 pesos
     <br>
-    <input type="checkbox" id="fries" data-price="55"> French Fries - 55 pesos
+    <input type="checkbox" id="fries" data-price="55" data-sku="SNK-FF-009"> French Fries - 55 pesos
     <br>
-    <input type="checkbox" id="nachos" data-price="30"> Nachos - 30 pesos
+    <input type="checkbox" id="nachos" data-price="30" data-sku="SNK-N-010"> Nachos - 30 pesos
     <br>
-    <input type="checkbox" id="cookies" data-price="15"> Chocolate Chip Cookies - 15 pesos
+    <input type="checkbox" id="cookies" data-price="15" data-sku="SNK-CC-011"> Chocolate Chip Cookies - 15 pesos
     <br><br><br>
     </div>
     
     <div class="category">
     <h2>Dessert</h2>
 
-    <input type="checkbox" id="halo_halo" data-price="35"> Halo-halo - 35 pesos
+    <input type="checkbox" id="halo_halo" data-price="35" data-sku="DES-HH-012"> Halo-halo - 35 pesos
     <br>
-    <input type="checkbox" id="mango" data-price="50"> Mango Graham Cake - 50 pesos
+    <input type="checkbox" id="mango" data-price="50" data-sku="DES-MGC-013"> Mango Graham Cake - 50 pesos
     <br>
-    <input type="checkbox" id="jelly" data-price="30"> Jelly Cups - 30 pesos
+    <input type="checkbox" id="jelly" data-price="30" data-sku="DES-JC-014"> Jelly Cups - 30 pesos
     <br>
-    <input type="checkbox" id="ice_cream" data-price="15"> Ice Cream (Various flavors) - 15 pesos
+    <input type="checkbox" id="ice_cream" data-price="15" data-sku="FOO-IC-015"> Ice Cream (Various flavors) - 15 pesos
     <br><br><br>
     </div>
 
@@ -76,21 +78,21 @@
     <div class="category">
     <h2>Drinks</h2>
 
-    <input type="checkbox" id="water" data-price="5"> Bottled Water - 5 pesos
+    <input type="checkbox" id="water" data-price="5" data-sku="DRK-BW-016"> Bottled Water - 5 pesos
     <br>
-    <input type="checkbox" id="lemonade" data-price="35"> Lemonade - 35 pesos
+    <input type="checkbox" id="lemonade" data-price="35" data-sku="DRK-L-017"> Lemonade - 35 pesos
     <br>
-    <input type="checkbox" id="iced_tea" data-price="10"> Iced Tea - 10 pesos
+    <input type="checkbox" id="iced_tea" data-price="10" data-sku="DRK-IT-018"> Iced Tea - 10 pesos
     <br>
 
     <h3>Soft Drink Brands</h3>
 
     <select id="soft_drink" class="soft_drink">
         <option value="" data-price="0"> Soft Drinks selections</option>
-        <option value="cola" data-price="10"> Coca-Cola - 10 pesos</option>
-        <option value="sprite" data-price="10"> Sprite - 10 pesos</option>
-        <option value="pepsi" data-price="10"> Pepsi - 10 pesos</option>
-        <option value="dew" data-price="10"> Mountain Dew - 10 pesos</option>
+        <option value="cola" data-price="10" data-sku="DRK-CC-019"> Coca-Cola - 10 pesos</option>
+        <option value="sprite" data-price="10" data-sku="DRK-S-020"> Sprite - 10 pesos</option>
+        <option value="pepsi" data-price="10" data-sku="DRK-P-021"> Pepsi - 10 pesos</option>
+        <option value="dew" data-price="10" data-sku="DRK-MD-022"> Mountain Dew - 10 pesos</option>
     </select>
     </div>
     </div>

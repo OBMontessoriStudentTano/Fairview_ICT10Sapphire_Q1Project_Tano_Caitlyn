@@ -4,16 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q1 Project</title>
+     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
     href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" 
     src="https://pyscript.net/releases/2026.7.3/core.js"></script>
 </head>
-    <title>SKU generator page</title>
-    <link rel="stylesheet" href="style.css">
-<body>
+<body class="body">
 
-    <script type="py" src="main.py"></script>
+    <br>
+
+    <header class="header">
+        <h4>Entrep Fair</h4>
+
+        <nav>
+            <a href="index.html">Cafe Menu</a>
+        </nav>
+    </header>
+
+    <h1>SKU Generator</h1>
+
+    <div class="receipt">
+
+        <h2>Generate Product SKU</h2>
+
+        <br>
+
+        <label for="category">Select Category:</label>
+
+        <br><br>
+
+        <select id="category" class="soft_drink">
+
+            <option value="">Select Category</option>
+ 
+            <option value="FOO">Food</option>
+
+            <option value="SNK">Snacks</option>
+
+            <option value="DES">Desserts</option>
+
+            <option value="DRK">Drinks</option>
+
+        </select>
+
+        <br><br><br>
+
+        <label for="product">Enter Product Name:</label>
+
+        <br><br>
+
+        <input type="text" id="product" placeholder="Ex: Fried Chicken">
+
+        <br><br><br>
+
+        <button class="button" type="button" py-click="generate_sku">Generate SKU</button>
+
+        <br>
+
+        <div id="sku_result">
+            <h2>SKU will appear here</h2>
+        </div>
+    </div>
+
+    <script type="py" src="sku.py"></script>
     
 </body>
 </html>

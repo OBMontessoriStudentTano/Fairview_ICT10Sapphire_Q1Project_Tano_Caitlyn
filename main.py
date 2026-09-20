@@ -14,11 +14,13 @@ def order(event):
 
             price = int(item.getAttribute("data-price"))
 
+            sku = item.getAttribute("data-sku")
+
             subtotal += price
 
             item_name = item.id.replace("_", " ").title()
 
-            receipt_lines.append(f"{item_name} - {price} pesos")
+            receipt_lines.append(f"{item_name} - {price} pesos - SKU {sku}")
 
     soft_drink = document.getElementById("soft_drink")
 
@@ -28,9 +30,11 @@ def order(event):
 
         soft_drink_price = int(selected.getAttribute("data-price"))
 
+        sku = selected.getAttribute("data-sku")
+
         subtotal += soft_drink_price
 
-        receipt_lines.append(selected.text)
+        receipt_lines.append(f"{selected.text} - SKU: {sku}")
 
     vat = subtotal * 0.12
     total = subtotal + vat
@@ -39,19 +43,27 @@ def order(event):
 
     if len(receipt_lines) == 0:
 
-        receipt += ("<p>No items selected.</p>")
+        receipt += """
+             <p>No items selected.</p>
+        """
 
     else:
 
         for item in receipt_lines:
 
-            receipt += (f"<p>{item}</p>")
+            receipt += f"""
+                <p>{item}</p>
+            """
 
     receipt += f"""
         <hr>
         <p>Subtotal: {subtotal:.2f} pesos</p>
         <p>VAT: {vat:.2f} pesos</p>
-        <p class="total"><strong>Total Amount: {total:.2f} pesos</strong></p>
+        <p class="total">
+           <strong>
+              Total Amount: {total:.2f} pesos
+           </strong>
+        </p>
     """
 
     document.getElementById("receipt").innerHTML = receipt

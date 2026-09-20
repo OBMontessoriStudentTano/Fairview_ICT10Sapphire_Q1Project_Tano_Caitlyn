@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+        .body {
+            margin: 0;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    
+
+        .header {
+            background-color: black;
+            color: #ffee8c;
+            text-align: center;
+            padding: 15px 40px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 20px;
+            color: #ffee8c;
+        }
+
+        .h1 {
+            color: #ffa500;
+            text-align: center;
+        }
+
+        .menu {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            color: #d19033
+        }
+
+        .soft_drink {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffee8c;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .button {
+            display: block;
+            width: 180px;
+            margin: 15px auto;
+            padding: 9px;
+            background: #ffd580;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background: #ff7518;
+            color: black;
+        }
+
+        .receipt {
+            background:#ffee8c;
+            color:#ff7518;
+            width: 55%;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .receipt h2 {
+            margin: 5px 0 12px;
+        }
+
+        .receipt p {
+            margin: 6px 0;
+        }
+
+        .total {
+            font-size: 20px;
+            color: black;
+        }
+
+        @media (max-width: 750px) {
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            .receipt {
+                position: static;
+            }
+
+        }

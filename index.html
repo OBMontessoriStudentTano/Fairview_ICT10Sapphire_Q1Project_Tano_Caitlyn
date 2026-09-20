@@ -3,20 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with Integers</title>
+    <title>Q1 Project</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" 
     href="https://pyscript.net/releases/2026.7.3/core.css" />
     <script type="module" 
     src="https://pyscript.net/releases/2026.7.3/core.js"></script>
-    <style>
-        .container {
-            display: flex;
-            justify-content: center;
-            
-        }
-    </style>
-</head>
-<body>
+<body class="body">
+
+    <br>
+
+    <header class="header">
+        <h4>Entrep Fair</h4>
+
+        <nav>
+            <a href="SKUpage.html">SKU Generator</a>
+        </nav>
+    </header>
+
+    <h1 class="h1">OBMC Entrepreneur Fair cafe</h1>
+
+    <br><br><br>
+
+    <div class="menu">
+
+    <div class="category">
+ 
+    <h2>Food</h2>
+
+    <input type="checkbox" id="chicken" data-price="65"> Fried Chicken - 65 pesos<br>
+    <input type="checkbox" id="pancit" data-price="15"> Pancit Pops - 15 pesos
+    <br>
+    <input type="checkbox" id="burger" data-price="60"> Cheese Burger - 60 pesos
+    <br>
+    <input type="checkbox" id="siomai" data-price="5"> Siomai - 5 pesos
+    <br>
+    <input type="checkbox" id="sandwiches" data-price="20"> Ham, Cheese, and Egg sandwiches - 20 pesos
+    <br><br><br>
+    </div>
+
+    <div class="category">
+    <h2>Snacks</h2>
+
+    <input type="checkbox" id="nuggets" data-price="65"> Chicken Nuggets - 65 pesos
+    <br>
+    <input type="checkbox" id="cupcakes" data-price="10"> Cupcakes - 10 pesos
+    <br>
+    <input type="checkbox" id="popcorn" data-price="20"> Popcorn - 20 pesos
+    <br>
+    <input type="checkbox" id="fries" data-price="55"> French Fries - 55 pesos
+    <br>
+    <input type="checkbox" id="nachos" data-price="30"> Nachos - 30 pesos
+    <br>
+    <input type="checkbox" id="cookies" data-price="15"> Chocolate Chip Cookies - 15 pesos
+    <br><br><br>
+    </div>
+    
+    <div class="category">
+    <h2>Dessert</h2>
+
+    <input type="checkbox" id="halo_halo" data-price="35"> Halo-halo - 35 pesos
+    <br>
+    <input type="checkbox" id="mango" data-price="50"> Mango Graham Cake - 50 pesos
+    <br>
+    <input type="checkbox" id="jelly" data-price="30"> Jelly Cups - 30 pesos
+    <br>
+    <input type="checkbox" id="ice_cream" data-price="15"> Ice Cream (Various flavors) - 15 pesos
+    <br><br><br>
+    </div>
+
+
+    <div class="category">
+    <h2>Drinks</h2>
+
+    <input type="checkbox" id="water" data-price="5"> Bottled Water - 5 pesos
+    <br>
+    <input type="checkbox" id="lemonade" data-price="35"> Lemonade - 35 pesos
+    <br>
+    <input type="checkbox" id="iced_tea" data-price="10"> Iced Tea - 10 pesos
+    <br>
+
+    <h3>Soft Drink Brands</h3>
+
+    <select id="soft_drink" class="soft_drink">
+        <option value="" data-price="0"> Soft Drinks selections</option>
+        <option value="cola" data-price="10"> Coca-Cola - 10 pesos</option>
+        <option value="sprite" data-price="10"> Sprite - 10 pesos</option>
+        <option value="pepsi" data-price="10"> Pepsi - 10 pesos</option>
+        <option value="dew" data-price="10"> Mountain Dew - 10 pesos</option>
+    </select>
+    </div>
+    </div>
+
+    <br><br>
+
+    <button class="button" type="button" py-click="order"> Confirm Order</button>
+
+    <br><br>
+
+    <div id="receipt" class="receipt">
+        <h2>Receipt</h2>
+    </div>
 
     <script type="py" src="main.py"></script>
     

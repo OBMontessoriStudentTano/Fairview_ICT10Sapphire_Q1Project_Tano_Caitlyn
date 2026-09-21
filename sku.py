@@ -3,9 +3,7 @@ from pyscript import document
 def generate_sku(event):
 
     category = document.getElementById("category").value
-
     product = document.getElementById("product").value.strip()
-
     result = document.getElementById("sku_result")
 
     if category == "":
@@ -13,6 +11,8 @@ def generate_sku(event):
         result.innerHTML = """
             <p>Please select a category.</p>
         """
+
+        return
 
     if product == "":
 

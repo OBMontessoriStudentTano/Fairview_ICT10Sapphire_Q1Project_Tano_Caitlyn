@@ -7,19 +7,15 @@ def generate_sku(event):
     result = document.getElementById("sku_result")
 
     if category == "":
-
         result.innerHTML = """
             <p>Please select a category.</p>
         """
-
         return
 
     if product == "":
-
-         result.innerHTML = """
+        result.innerHTML = """
             <p>Please enter a product name.</p>
         """
-
         return
 
     words = product.upper().split()

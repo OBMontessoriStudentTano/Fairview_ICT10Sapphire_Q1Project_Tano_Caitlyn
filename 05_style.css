@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff8e7;
+            color: #333;
+        }
+    
+
+        .header {
+            background-color: black;
+            color: #ffee8c;
+            text-align: center;
+            padding: 20px 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h4 {
+            margin: 0;
+            font-size: 20px;
+            color: #ffee8c;
+        }
+
+        .header nav a {
+            color:#ffee8c;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .header nav a:hover {
+            color:#ffee8c;
+            color: white;
+        }
+
+        .h1 {
+            color: #ff7518;
+            text-align: center;
+            font-size: 35px;
+            margin-top: 45px;
+            margin-bottom: 10px;
+        }
+
+        .menu {
+            width: 90%;
+            max-width: 1050px;
+            margin: 35px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #ffee8c;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .category h2 {
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ffee8c;
+            margin-top: 0;
+            color: #ff7518
+        }
+
+        .category input[type="checkbox"] {
+            accent-color: #ff7518;
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .category br{
+            line-height: 2;
+        }
+
+        .soft_drink {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ffee8c;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            background: white;
+            cursor: pointer;
+        }
+
+        .soft_drink:focus {
+            outline: none;
+            border-color: #ff7518
+        }
+
+        .button {
+            display: block;
+            width: 180px;
+            margin: 15px auto;
+            padding: 10px;
+            background: #ffd580;
+            color: black;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(255,117,24,0.25);
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: black;
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        .receipt {
+            background: white;
+            color:#333;
+            width: 55%;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            border-top: 5px solid #ff7518;
+        }
+
+        .receipt h2 {
+            margin: 5px;
+            color: #ff7518;
+        }
+
+        .receipt h4 {
+            margin: 5px;
+            color: #ff7518;
+            font-size: 20px;
+        }
+
+        .receipt p {
+            margin: 5px 0;
+        }
+
+        .total {
+            font-size: 20px;
+            color: black;
+            background: #ffee8c;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 750px) {
+
+            .header {
+                padding: 15px 20px;
+            }
+
+            .h1 {
+                font-size: 25px;
+            }
+
+            .menu {
+                grid-template-columns: 1fr;
+            }
+
+            .receipt {
+                width: 85%;
+            }
+
+        }

@@ -5,6 +5,7 @@ def generate_sku(event):
     category = document.getElementById("category").value
     product = document.getElementById("product").value.strip()
     result = document.getElementById("sku_result")
+    stock = document.getElementById("stock").value
 
     if category == "":
         result.innerHTML = """
@@ -18,19 +19,28 @@ def generate_sku(event):
         """
         return
 
+    if stock == "":
+        result.innerHTML = """
+            <p>Please enter the stock quantity.</p>
+        """
+        return
+
     words = product.upper().split()
 
     product_code = ""
+
+    stock_code = str(int(stock)).zfill(3)
 
     for word in words:
 
         product_code += word[0] 
 
-    sku = f"{category}-{product_code}"
+    sku = f"{category}-{product_code}-{stock_code}"
 
     result.innerHTML = f"""
         <h3>Generated SKU</h3>
         <h2>{sku}</h2>
         <p>Product: {product}</p>
+        <p>Stock Quantity: {stock}</p>
     """
            

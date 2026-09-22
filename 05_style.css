@@ -1,10 +1,11 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
         * {
             box-sizing: border-box;
         }
 
-
+        /* General page styling */
         .body {
             margin: 0;
             font-family: 'Poppins', sans-serif;
@@ -12,7 +13,7 @@
             color: #333;
         }
     
-
+        /* Header and navigation */
         .header {
             background-color: black;
             color: #ffee8c;
@@ -44,6 +45,7 @@
             color: white;
         }
 
+        /* Main page title */
         .h1 {
             color: #ff7518;
             text-align: center;
@@ -52,6 +54,7 @@
             margin-bottom: 10px;
         }
 
+        /* Menu layout */
         .menu {
             width: 90%;
             max-width: 1050px;
@@ -61,6 +64,7 @@
             gap: 25px;
         }
 
+        /* Food category cards */
         .category {
             background: white;
             padding: 25px;
@@ -88,6 +92,7 @@
             line-height: 2;
         }
 
+        /* Soft Drink dropdown menu */
         .soft_drink {
             width: 100%;
             padding: 10px;
@@ -104,6 +109,7 @@
             border-color: #ff7518
         }
 
+        /* Confirm Order button */
         .button {
             display: block;
             width: 180px;
@@ -126,6 +132,7 @@
             color: white;
         }
 
+        /* Receipt styling */
         .receipt {
             background: white;
             color:#333;
@@ -154,6 +161,7 @@
             margin: 5px 0;
         }
 
+        /* Total amount styling */
         .total {
             font-size: 20px;
             color: black;
@@ -162,6 +170,7 @@
             border-radius: 5px;
         }
 
+        /* Mobile responsive design */
         @media (max-width: 750px) {
 
             .header {

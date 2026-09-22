@@ -14,14 +14,17 @@
 
     <br>
 
+    <!--Navigation header-->
     <header class="header">
         <h4>Entrep Fair</h4>
 
+        <!--Link to the SKU Generator page-->
         <nav>
             <a href="02_SKUpage.html">SKU Generator</a>
         </nav>
     </header>
-
+    
+    <!--Cafe menu title-->
     <h1 class="h1">OBMC Entrepreneur Fair cafe</h1>
 
     <br><br><br>
@@ -30,6 +33,7 @@
 
     <div class="category">
  
+    <!--Food menu category-->
     <h2>Food</h2>
 
     <input type="checkbox" id="chicken" data-price="65" data-sku="FOO-FC-001"> Fried Chicken - 65 pesos
@@ -44,6 +48,7 @@
     <br><br><br>
     </div>
 
+    <!--Snack menu category-->
     <div class="category">
     <h2>Snacks</h2>
 
@@ -61,6 +66,7 @@
     <br><br><br>
     </div>
     
+    <!--Dessert menu category-->
     <div class="category">
     <h2>Dessert</h2>
 
@@ -74,7 +80,7 @@
     <br><br><br>
     </div>
 
-
+    <!--Drinks menu category-->
     <div class="category">
     <h2>Drinks</h2>
 
@@ -99,14 +105,17 @@
 
     <br><br>
 
+    <!--Confirm order button-->
     <button class="button" type="button" py-click="order"> Confirm Order</button>
 
     <br><br>
 
+    <!--Receipt display area-->
     <div id="receipt" class="receipt">
         <h2>Receipt</h2>
     </div>
 
+    <!--Connect the webpage to the Python ordering program-->
     <script type="py" src="03_main.py"></script>
     
 </body>

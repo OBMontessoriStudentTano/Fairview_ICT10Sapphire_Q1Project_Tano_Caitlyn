@@ -14,22 +14,27 @@
 
     <br>
 
+    <!--Navigation header-->
     <header class="header">
         <h4>Entrep Fair</h4>
 
+        <!--Link to the Cafe Menu page-->
         <nav>
             <a href="01_index.html">Cafe Menu</a>
         </nav>
     </header>
 
+    <!--SKU Generator title-->
     <h1 class="h1">SKU Generator</h1>
 
+    <!--SKU Generator form-->
     <div class="receipt">
 
         <h2>Generate Product SKU</h2>
 
         <br>
 
+        <!--Product category selection-->
         <label for="category">Select Category:</label>
 
         <br><br>
@@ -50,6 +55,7 @@
 
         <br><br><br>
 
+        <!--Product name input-->
         <label for="product">Enter Product Name:</label>
 
         <br><br>
@@ -58,6 +64,7 @@
 
         <br><br>
 
+        <!--Stock quantity input-->
         <label for="stock">Enter Stock Quantity</label>
 
         <br><br>
@@ -66,10 +73,12 @@
 
         <br><br><br>
 
+        <!--Button that runs the Python SKU gnerator-->
         <button class="button" type="button" py-click="generate_sku">Generate SKU</button>
 
         <br>
 
+        <!--Gnerated SKU display area-->
         <div id="sku_result">
             <h2>SKU will appear here</h2>
         </div>
